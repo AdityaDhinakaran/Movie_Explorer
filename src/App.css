@@ -1,0 +1,81 @@
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background:#0f172a;
+  color:#f1f5f9;
+}
+
+h1{
+  text-align:center;
+  padding:20px;
+  font-size:28px;
+}
+
+.controls{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  padding:10px;
+  flex-wrap:wrap;
+}
+
+input{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+  outline:none;
+  width:200px;
+}
+
+button{
+  padding:10px 14px;
+  border:none;
+  border-radius:8px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#1d4ed8;
+}
+
+select{
+  padding:10px;
+  border:none;
+  border-radius:8px;
+}
+
+.movie-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:#1e293b;
+  border-radius:12px;
+  overflow:hidden;
+  transition:0.2s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+}
+
+.card h3{
+  font-size:16px;
+  padding:10px;
+}
+
+.card p{
+  padding:0 10px 10px;
+  color:#94a3b8;
+}
